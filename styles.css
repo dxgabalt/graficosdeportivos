@@ -1,0 +1,127 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #ffffff;
+}
+
+header, nav, main, footer {
+    padding: 20px;
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: #BB1919;
+    color: #FFFFFF;
+    text-align: center;
+    font-family: 'Manrope',Helvetica,Arial,Lucida,sans-serif;
+}
+
+/* Estilos para la barra de navegación */
+nav {
+    background-color: #BB1919;
+    font-family: 'Manrope',Helvetica,Arial,Lucida,sans-serif;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.departments {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.departments li {
+    margin: 5px;
+}
+
+.departments a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.departments a:hover {
+    color: #007bff;
+}
+
+/* Estilos para hacer la interfaz responsive */
+@media screen and (max-width: 768px) {
+    .departments {
+        flex-direction: column;
+    }
+
+    .departments li {
+        margin: 5px 0;
+    }
+}
+
+
+/* Estilos para los departamentos y municipios */
+.department {
+    background-color: #BB1919;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.department h2 {
+    margin-bottom: 15px;
+}
+
+.municipalities {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.municipalities li {
+    margin-bottom: 5px;
+}
+
+/* Estilos para el footer */
+footer {
+    background-color: #BB1919;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Enlace personalizado */
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para las ofertas exclusivas */
+.offers {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    color: #BB1919;
+    border-radius: 10px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    font-size: 18.2px;
+}
+
+.offer-image {
+    width: 80px; /* Tamaño de la imagen */
+    height: 80px; /* Tamaño de la imagen */
+    border: 5px solid #BB1919; /* Borde */
+    border-radius: 50%; /* Borde circular */
+    margin-right: 20px;
+}
